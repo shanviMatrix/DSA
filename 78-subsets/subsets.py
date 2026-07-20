@@ -9,11 +9,9 @@ class Solution:
                 result.append(current[:])
                 return
 
-            # Take the current element
             current.append(nums[index])
             backtrack(index + 1, current)
 
-            # Don't take the current element
             current.pop()
             backtrack(index + 1, current)
 
